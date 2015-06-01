@@ -6,13 +6,11 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{CFC734DE-9436-4805-945E-5BE34990A839}"
 	ProjectSection(SolutionItems) = preProject
 		.nuget\NuGet.Config = .nuget\NuGet.Config
-		.nuget\NuGet.exe = .nuget\NuGet.exe
-		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Gacho.Forms", "src\Gacho.Forms\Gacho.Forms.fsproj", "{DD1C2744-4EFC-4BE8-B7F2-3ED18C388E42}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Gacho.Forms.Tests", "src\Gacho.Forms.Tests\Gacho.Forms.Tests.fsproj", "{2FCC4E5D-8BEB-4B8F-89F5-CD90D387EC5C}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Gacho.Forms.Tests", "tests\Gacho.Forms.Tests\Gacho.Forms.Tests.fsproj", "{2FCC4E5D-8BEB-4B8F-89F5-CD90D387EC5C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
