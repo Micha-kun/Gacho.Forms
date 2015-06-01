@@ -32,14 +32,30 @@ Target "Test" (fun _ ->
              OutputFile = testDir + "TestResults.xml" })
 )
 
-Target "Default" (fun _ ->
-    trace "Hello World from FAKE"
+Target "NuGet" (fun _ ->
+    NuGet (fun p -> 
+        {p with
+            Authors = ["Michael-Jorge Gómez Campos"]
+            Project = "Gacho.Forms"
+            Summary = ""
+            Description = "Gacho.Forms"
+            Version = "0.1.0.0"
+            ReleaseNotes = ""
+            Tags = "F#"
+            OutputPath = "nuget"
+            //ToolPath = "./packages/NUnit.Runners.2.6.3/tools"
+            AccessKey = getBuildParamOrDefault "nugetkey" ""
+            Publish = hasBuildParam "nugetkey"
+        }) ("nuget/Gacho.Forms.nuspec")
 )
+
+Target "Default" DoNothing
 
 "Clean"
     ==> "BuildLib"
     ==> "BuildTest"
     ==> "Test"
+    ==> "NuGet"
     ==> "Default"
 
 RunTargetOrDefault "Default"
