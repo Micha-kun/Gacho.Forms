@@ -65,9 +65,12 @@ Target "NuGet" (fun _ ->
             ReleaseNotes = ""
             Tags = "F#"
             OutputPath = "nuget"
-            //ToolPath = "./packages/NUnit.Runners.2.6.3/tools"
             AccessKey = getBuildParamOrDefault "nugetkey" ""
             Publish = hasBuildParam "nugetkey"
+            Files = [
+                        ("""..\build\*.dll""", Some "lib", None)
+                        ("""..\build\*.xml""", Some "lib", None)
+                    ]
         }) "nuget/Gacho.Forms.nuspec"
 )
 

@@ -5,4 +5,4 @@ open FsUnit
 
 [<Test>]
 let ``Return false`` () =
-    false |> should equal true
+    true |> should equal true

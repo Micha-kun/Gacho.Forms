@@ -5,17 +5,16 @@
       <version>@build.number@</version>
       <authors>@authors@</authors>
       <owners>@authors@</owners>
+	  <summary>@summary@</summary>
+	  <licenseUrl>https://github.com/Micha-kun/Gacho.Forms/blob/master/LICENSE</licenseUrl>
       <projectUrl>https://github.com/Micha-kun/Gacho.Forms</projectUrl>
       <requireLicenseAcceptance>false</requireLicenseAcceptance>
-      <summary>@summary@</summary>
       <description>@description@</description>
       <releaseNotes>@releaseNotes@</releaseNotes>
       <copyright>Copyright 2015</copyright>
       <tags>@tags@</tags>
       @dependencies@
+	  @references@
     </metadata>
-    <files>
-        <file src="..\build\*.dll" target="lib" />
-		<file src="..\build\*.xml" target="lib" />
-    </files>
+	@files@
 </package>
