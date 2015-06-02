@@ -35,10 +35,10 @@ Target "Test" (fun _ ->
 Target "NuGet" (fun _ ->
     NuGet (fun p -> 
         {p with
-            Authors = ["Michael-Jorge Gómez Campos"]
+            Authors = ["Michael-Jorge GÃ³mez Campos"]
             Project = "Gacho.Forms"
             Summary = ""
-            Description = "Gacho.Forms"
+            Description = "A small library with types and helper tools for WinForms and WebForms developers in F#."
             Version = "0.1.0.0"
             ReleaseNotes = ""
             Tags = "F#"
