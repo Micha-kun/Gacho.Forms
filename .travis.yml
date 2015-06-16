@@ -1,3 +1,4 @@
 language: csharp
-
 solution: Gacho.Forms.sln
+before_script:
+  - nuget restore Gacho.Forms.sln
