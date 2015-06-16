@@ -55,6 +55,13 @@
     <Content Include="packages.config" />
     <Content Include="app.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Gacho.WinForms\Gacho.WinForms.fsproj">
+      <Name>Gacho.WinForms</Name>
+      <Project>{2780ff44-2a02-4abd-874e-3cc9a4f5d70d}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <MinimumVisualStudioVersion Condition="'$(MinimumVisualStudioVersion)' == ''">11</MinimumVisualStudioVersion>
   </PropertyGroup>

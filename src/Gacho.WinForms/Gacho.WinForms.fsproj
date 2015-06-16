@@ -41,6 +41,13 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Numerics" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Gacho.Forms\Gacho.Forms.fsproj">
+      <Name>Gacho.Forms</Name>
+      <Project>{dd1c2744-4efc-4be8-b7f2-3ed18c388e42}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <MinimumVisualStudioVersion Condition="'$(MinimumVisualStudioVersion)' == ''">11</MinimumVisualStudioVersion>
   </PropertyGroup>

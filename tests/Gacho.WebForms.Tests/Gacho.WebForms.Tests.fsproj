@@ -55,6 +55,13 @@
     <Content Include="packages.config" />
     <Content Include="app.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Gacho.WebForms\Gacho.WebForms.fsproj">
+      <Name>Gacho.WebForms</Name>
+      <Project>{1d0598eb-4c68-4999-94b5-67bef90657e2}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <MinimumVisualStudioVersion Condition="'$(MinimumVisualStudioVersion)' == ''">11</MinimumVisualStudioVersion>
   </PropertyGroup>
