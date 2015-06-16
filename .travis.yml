@@ -1,4 +1,6 @@
 language: csharp
-solution: Gacho.Forms.sln
-before_script:
-  - nuget restore Gacho.Forms.sln
+
+sudo: false  # use the new container-based Travis infrastructure
+
+script: 
+  - ./build.sh Default
