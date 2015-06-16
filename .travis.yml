@@ -1,2 +1,2 @@
-language fsharp
-solution Gacho.Forms.sln
+language: fsharp
+solution: Gacho.Forms.sln
