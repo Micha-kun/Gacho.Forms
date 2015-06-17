@@ -49,7 +49,7 @@ Target "Test" (fun _ ->
     !! (testDir + "/Gacho.Forms.Tests.dll")
       |> NUnit (fun p ->
           {p with
-             ToolPath = "./packages/NUnit.Runners.2.6.3/tools"
+             ToolPath = "./packages/NUnit.Runners.2.6.4/tools"
              DisableShadowCopy = true;
              OutputFile = testDir + "TestResults.xml" })
 )

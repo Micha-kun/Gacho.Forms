@@ -72,13 +72,15 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="nunit.framework">
-      <HintPath>..\..\packages\NUnit.2.6.3\lib\nunit.framework.dll</HintPath>
+      <HintPath>..\..\packages\NUnit.2.6.4\lib\nunit.framework.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Numerics" />
-    <ProjectReference Include="..\Gacho.Forms\Gacho.Forms.fsproj">
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Gacho.Forms\Gacho.Forms.fsproj">
       <Name>Gacho.Forms</Name>
       <Project>{dd1c2744-4efc-4be8-b7f2-3ed18c388e42}</Project>
       <Private>True</Private>
