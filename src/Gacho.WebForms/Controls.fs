@@ -2,11 +2,7 @@
 
 open System.Web.UI
 
-type Control with
-    member this.FindControl<'a when 'a :> Control> id =
-        match this.FindControl(id) with
-            | Some(ctrl : 'a) -> Some(ctrl)
-            | _ -> None
-
-let findControl<'a when 'a :> Control> id (ctl : Control) =
-    ctl.FindControl<'a> id
+let findControl id (ctl : Control) : 'a option when 'a :> Control = 
+    match ctl.FindControl(id) with
+        | :? 'a as x -> Some(x)
+        | _ -> None
